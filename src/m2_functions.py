@@ -3,11 +3,11 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Tanner Brammeier.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -40,7 +40,14 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+window = rg.TurtleWindow
 
+triangle = rg.SimpleTurtle()
+triangle.forward(100)
+triangle.left(90)
+triangle.forward(60)
+
+window.close_on_mouse_click()
 
 ###############################################################################
 # TODO: 4a.  Define a function immediately below this _TODO_.
