@@ -21,6 +21,8 @@ import rosegraphics as rg
 import math
 
 def main():
+    print(right_triangle(3, 4))
+
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
@@ -28,7 +30,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 3a.  Define a function immediately below this _TODO_.
+# DONE: 3a.  Define a function immediately below this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -36,21 +38,17 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-window = rg.TurtleWindow
 
-side1 = rg.SimpleTurtle()
-side2 = rg.SimpleTurtle()
-def side1(a):
+def right_triangle(side1, side2):
+    side1 = side1 ** 2
+    side2 = side2 ** 2
+    h = math.sqrt(side1 + side2)
+    return h
 
-
-
-side2.forward(60)
-
-window.close_on_mouse_click()
 
 ###############################################################################
 # TODO: 4a.  Define a function immediately below this _TODO_.
@@ -79,8 +77,10 @@ window.close_on_mouse_click()
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+def turtle(g , t):
+    window = rg.TurtleWindow
 
-
+    window.close_on_mouse_click()
 ###############################################################################
 # TODO: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
