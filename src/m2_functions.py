@@ -46,6 +46,7 @@ triangle = rg.SimpleTurtle()
 triangle.forward(100)
 triangle.left(90)
 triangle.forward(60)
+triangle.go_to(0, 0)
 
 window.close_on_mouse_click()
 
