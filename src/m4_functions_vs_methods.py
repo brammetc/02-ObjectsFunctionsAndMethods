@@ -151,24 +151,9 @@ def try_methods():
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
 def try_functions(x1, y1, x2, y2, x3, y3):
-    jump = rg.SimpleTurtle()
-    jump.pen_up()
-    jump.go_to(rg.Point(x1, y1))
-
-    jump.pen_down()
-    jump.go_to(rg.Point(x2, y2))
-
-    jump.pen_up()
-    jump.go_to(rg.Point(y2, x1))
-
-    jump.pen_down()
-    jump.go_to(rg.Point(x3, x3))
-
-    jump.pen_up()
-    jump.go_to(rg.Point(-y3, y3))
-
-    jump.pen_down()
-    jump.go_to(rg.Point(y2, y2))
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
     """
     Causes several SimpleTurtles to do the following:
