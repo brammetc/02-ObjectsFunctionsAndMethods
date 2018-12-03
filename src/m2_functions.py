@@ -4,7 +4,7 @@ Practice DEFINING and CALLING
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Aaron Wilkin, their colleagues, and Tanner Brammeier.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # DONE: 2.
